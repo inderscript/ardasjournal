@@ -45,13 +45,13 @@ body {
     max-width: 400px;
 }
 
-.about-ardas h1 {
+.about-ardas h1, .mobile-header h1 {
     font-size: 48px;
     font-weight: 400;
     color: #3c5250;
 }
 
-.about-ardas .tagline {
+.about-ardas .tagline, .mobile-header tagline {
     font-size: 24px;
     font-weight: 100;
     margin-bottom: 36px;
@@ -157,5 +157,9 @@ body {
 
     .header-page .sub-section {
         width: 100%;
+    }
+
+    .about-ardas h1, .about-ardas .tagline {
+        display: none;
     }
   }
