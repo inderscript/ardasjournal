@@ -30,6 +30,10 @@ body {
     color: #333;
 }
 
+.mobile-header {
+    display: none;
+}
+
 .header-page .sub-section {
     width: 50%;
     display: flex;
@@ -129,6 +133,11 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+
+    .mobile-header {
+        display: block;
+        text-align: center;
+    }
 
     .about-ardas {
         text-align: center;
