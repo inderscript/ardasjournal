@@ -1,0 +1,152 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.header-page {
+    width: 100%;
+    min-height: 100vh;
+    background-image:  linear-gradient( to right, rgba(255,255,255,1), rgba(255,255,255,0)), url("images/background.jpg") ; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: ardas_serif;
+    src: url(fonts/Recoleta-Regular.ttf);
+    font-weight: 400;
+  }
+
+@font-face {
+    font-family: ardas_serif;
+    src: url(fonts/Recoleta-Light.ttf);
+    font-weight: 100;
+  }
+
+body {
+    font-family: 'ardas_serif', serif;
+    color: #333;
+}
+
+.header-page .sub-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-page .sub-section .about-ardas{
+    max-width: 400px;
+}
+
+.about-ardas h1 {
+    font-size: 48px;
+    font-weight: 400;
+    color: #3c5250;
+}
+
+.about-ardas .tagline {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 36px;
+}
+
+.about-ardas .about-text {
+    font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: 100;
+}
+
+.shop-box {
+    max-width: 360px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    box-shadow: 15px 15px 45px rgba(57,81,78, 0.3);
+    backdrop-filter: blur(20px);
+    padding: 24px;
+}
+
+.shop-box h2 {
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 6px;
+    display: none;
+    color:rgb(57,81,78)
+}
+
+.shop-box img {
+    width:100%;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.shop-box .price-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-box .price-tag {
+    font-size: 36px;
+    font-weight: 100;
+    color: #3c5250;
+}
+
+.shop-box small {
+    font-size: 14px;
+}
+.shop-box .buy-now-btn {
+    text-decoration: none;
+    line-height: 36px;
+    padding: 12px;
+    border: none;
+    background-color: #3c5250;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'ardas_serif', serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-weight: 100;
+    transition: 0.3s all ease;
+    display: block;
+}
+
+.shop-box .buy-now-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transform: rotate(10);
+    box-shadow: 15px 30px 45px rgb(57,81,78, 0.3);
+}
+
+.shop-box .buy-now-btn:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 900px) {
+
+    .about-ardas {
+        text-align: center;
+    }
+
+    .shop-box h2 {
+        display: block;
+    }
+
+    .shop-box {
+        margin-bottom: 36px;
+    }
+
+    .header-page {
+        flex-direction: column-reverse;
+    }
+
+    .header-page .sub-section {
+        width: 100%;
+    }
+  }
