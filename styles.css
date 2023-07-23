@@ -3,14 +3,20 @@
     padding:0;
 }
 
+@keyframes moove {
+    from {background-size:100%; background-position: 0 0;}
+    to {background-size:140%; background-position: center center;}
+  }
+
 .header-page {
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     background-image:  linear-gradient( to right, rgba(255,255,255,1), rgba(255,255,255,0)), url("images/background.jpg") ; 
-    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: moove 45s ease 6s infinite alternate;
 }
 
 @font-face {
@@ -64,9 +70,9 @@ body {
 }
 
 .shop-box {
-    max-width: 360px;
+    max-width: 320px;
     background: rgba(255,255,255,0.7);
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 15px 15px 45px rgba(57,81,78, 0.3);
     backdrop-filter: blur(20px);
     padding: 24px;
@@ -74,8 +80,7 @@ body {
 
 .shop-box img {
     width:100%;
-    height: 300px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-bottom: 12px;
 }
 
@@ -98,17 +103,14 @@ body {
 .shop-box .buy-now-btn {
     text-decoration: none;
     line-height: 36px;
-    padding: 12px;
+    padding:12px 24px;
     border: none;
     background-color: #3c5250;
     border-radius: 5px;
     color: white;
-    text-transform: uppercase;
-    letter-spacing: 4px;
     font-family: 'ardas_serif', serif;
-    font-weight: 400;
-    font-size: 18px;
     font-weight: 100;
+    font-size: 18px;
     transition: 0.3s all ease;
     display: block;
 }
@@ -141,7 +143,9 @@ body {
     }
 
     .header-page {
+        padding: 6px;
         flex-direction: column-reverse;
+        background-image:  linear-gradient( to bottom, rgba(255,255,255,1), rgba(255,255,255,0)), url("images/background.jpg") ; 
     }
 
     .header-page .sub-section {
@@ -151,5 +155,4 @@ body {
     .about-ardas h1, .about-ardas .tagline {
         display: none;
     }
-    
   }
