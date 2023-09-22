@@ -3,20 +3,16 @@
     padding:0;
 }
 
-@keyframes moove {
-    from {background-size:100%; background-position: 0 0;}
-    to {background-size:140%; background-position: center center;}
-  }
-
 .header-page {
     max-width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     background-image:  linear-gradient( to right, rgba(255,255,255,1), rgba(255,255,255,0)), url("images/background.jpg") ; 
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: moove 45s ease 6s infinite alternate;
 }
 
 @font-face {
@@ -40,11 +36,15 @@ body {
     display: none;
 }
 
-.header-page .sub-section {
+ .sub-section {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.video-subsection {
+    width:50%;
 }
 
 .header-page .sub-section .about-ardas{
@@ -100,7 +100,7 @@ body {
 .shop-box small {
     font-size: 14px;
 }
-.shop-box .buy-now-btn {
+.buy-now-btn {
     text-decoration: none;
     line-height: 36px;
     padding:12px 24px;
@@ -126,12 +126,68 @@ body {
     transform: scale(0.9);
 }
 
+
+/* ABOUT PAGE */
+
+section.about {
+    padding:24px 12px;
+    background-image: linear-gradient(to right ,rgba(57,81,78,1) , rgba(225, 163, 163, 0.9));
+    color: white;
+}
+
+section.about .buy-now-btn {
+    width: 100px;
+    margin:auto;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-subsection {
+    width: 100%;
+    max-width: 500px;
+}
+
+h3 {
+    margin-top: 12px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 100;
+    margin-top:12px;
+    margin-bottom: 24px;
+}
+
+.video-text {
+    max-width: 400px;
+    margin: auto;
+    padding: 12px 0;
+}
+
+.video-file {
+    display: block;
+    margin: 24px auto;
+    border-radius: 15px;
+    width: 300px;
+    height: 535px;
+    overflow: clip;
+}
+
 @media screen and (max-width: 900px) {
 
     .mobile-header {
         display: block;
         text-align: center;
         margin-bottom: 36px;
+    }
+
+    .video-section {
+        flex-direction: column;
+        text-align: center;
     }
 
     .about-ardas {
