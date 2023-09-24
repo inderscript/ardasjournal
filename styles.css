@@ -101,6 +101,7 @@ body {
     font-size: 14px;
 }
 .buy-now-btn {
+    text-align: center;
     text-decoration: none;
     line-height: 36px;
     padding:12px 24px;
