@@ -16,6 +16,11 @@
                 document.querySelectorAll(".buy-now-btn").forEach(bnb => {
                     bnb.setAttribute("href", "https://buy.stripe.com/00g7tI6ANe1816E9AB");
                 })
+            } else if (country == "UK") {
+                document.querySelector(".price-tag").innerHTML= "25 <small> EURO </small>";
+                document.querySelectorAll(".buy-now-btn").forEach(bnb => {
+                    bnb.setAttribute("href", "https://buy.stripe.com/fZedS6f7j0ai7v2fZ0");
+                })
             }
             console.log(country);
         }
