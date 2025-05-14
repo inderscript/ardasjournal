@@ -86,7 +86,6 @@ body {
 
 .shop-box .price-box {
     width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -114,6 +113,7 @@ body {
     font-size: 18px;
     transition: 0.3s all ease;
     display: block;
+    margin-bottom:12px;
 }
 
 .shop-box .buy-now-btn:hover {
